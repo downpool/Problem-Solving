@@ -5,5 +5,5 @@ function solution(s) {
 }
 
 
-let array = 1;
-console.log(solution(array));
+let arr = [];
+console.log(solution(arr));

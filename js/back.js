@@ -10,17 +10,3 @@ let ar = input[1].split(' ');
 for(let i = 0; i < n; i++){
     arr.push(Number(ar[i]));
 }
-
-let max = 0;
-for(let i = 0; i < n - 2; i++){
-    for(let j = i + 1; j < n - 1; j++){
-        for(let k = j + 1; k < n; k++){
-            let temp = arr[i] + arr[j] + arr[k];
-            if(temp >= max && temp <= m){
-                max = temp;
-            }
-        }
-    }
-}
-
-console.log(max);
