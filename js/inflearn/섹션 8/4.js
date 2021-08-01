@@ -1,8 +1,7 @@
 function solution(s) {
     let answer = [];
-    let ch = Array.from({
-        length: s + 1
-    }, () => 0);
+    let ch = new Array(s + 1);
+    ch.fill(0);
 
     function DP(n) {
         if (n === s + 1) {
