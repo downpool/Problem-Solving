@@ -5,9 +5,9 @@ function solution(s) {
         if (n > 7) {
             return;
         } else {
-            answer += n + ' ';
             DP(n * 2);
             DP(n * 2 + 1);
+            answer += n + ' ';
         }
     }
     DP(s);
