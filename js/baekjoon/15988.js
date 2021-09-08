@@ -25,7 +25,7 @@ function solution(n) {
         }
     }
     DP(0, 0);
-    return answer % 1000000009;
+    return answer;
 }
 
 for(let i = 0; i < inp.length; i++){
