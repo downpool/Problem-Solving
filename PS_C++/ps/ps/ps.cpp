@@ -1,23 +1,21 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-unsigned long long int arr[101];
-
-unsigned long long int fibo(int n){
-    if(n <= 1) return n;
-    if(arr[n] != 0) return arr[n];
-    
-    return arr[n] = fibo(n - 1) + fibo(n - 2);
-}
-
 int main(){
-    int n;
-    arr[1] = 0;
-    arr[2] = 1;
-    arr[3] = 1;
-    cin >> n;
-    cout << fibo(n + 1);
+    int T;
+    cin >> T;
     
+    for(int test = 1; test <= T; test++){
+        int temp;
+        cin >> temp;
+        vector<int> vec1(temp);
+        for(int i = 0; i < vec1.size(); i++){
+            int tem;
+            cin >> tem;
+        }
+        cout << "#" << test << " " << temp;
+    };
     return 0;
 }
