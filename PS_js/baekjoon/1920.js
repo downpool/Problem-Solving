@@ -48,3 +48,22 @@ for(let i = 0; i < arr.length; i++){
     arr[i] = Number(arr[i]);
 }
 arr.sort();
+
+//sol4 맵
+
+let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+let arr = input[1].split(' ');
+let map = new Map();
+for(let i of arr){
+    map.set(i, 1);
+}
+let arr2 = input[3].split(' ');
+for(let i = 0; i < arr2.length; i++){
+    if(map.has(arr2[i])){
+        arr2[i] = 1;
+    }else{
+        arr2[i] = 0;
+    }
+}
+console.log(arr2.join('\n'));
