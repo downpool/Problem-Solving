@@ -1,5 +1,5 @@
 //1번 도전
-function solution(number, k) {
+function solution1(number, k) {
     let answer = '';
     let slic = number.split('');
     let count = 0;
@@ -19,7 +19,7 @@ function solution(number, k) {
     return answer;
 }
 //답
-function solution(number, k) {
+function asolution(number, k) {
     const stack = [];
     let count = 0;
 
