@@ -15,7 +15,7 @@ function solution(priorities, location) {
         let pos = ret.shift();
         ansarr.push(pos);
     }
-    //??
+    //???
     answer = ansarr.indexOf(location) + 1;
     return answer;
 }
