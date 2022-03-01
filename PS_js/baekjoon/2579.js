@@ -1,19 +1,15 @@
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
-//입력 형태 변환
-for(let i = 1; i < input.length; i++){
-    input[i] = Number(input[i]);
+let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+let n = Number(input.shift());
+let arr = Array(input.length);
+for(let i = 0; i < input.length; i++){
+    arr[i] = Number(input[i]);
 }
-input.shift();
-let maxArr = Array.from()
-function DP(n, sum){
-    if(n == 0){
-        return sum;
-    }else{
-        DP(n - 1, sum + input[n]);
-        DP(n - 2, sum + input[n]);
-    }
-}
-let ans = DP(input.length - 1, 0);
+let dp = Array(301);
+dp[0] = arr[0];
+dp[1] = Math.max(arr[0] + arr[1], arr[1]);
+dp[2] = Math.max(arr[1] + arr[2], arr[0] + arr[2]);
 
-console.log(ans);
+for(let i = 3; i < arr.length; i++){
+    dp[i] = Math.max(arr[i] + dp[i - 2], arr[i] + arr[i - 1] + dp[i - 3]);
+}
+console.log(dp[n - 1]);
