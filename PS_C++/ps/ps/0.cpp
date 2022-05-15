@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
+const int inf = 1000000000;
 
 void solve(){
 
