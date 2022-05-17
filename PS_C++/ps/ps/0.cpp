@@ -1,7 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-const int inf = 1000000000;
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<pair<int, int> > vpi;
+typedef pair<int, int> pi;
+#define INF 1000000000;
 
 void solve(){
 
