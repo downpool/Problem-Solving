@@ -46,4 +46,21 @@ function Kruskal(){
     //또한 스패닝 트리의 간선의 수가 V - 1이면
     //종료.
     //쉽잖아..?
+    let graph = [];
+    function Union(a, b){
+        a = Find(a);
+        b = Find(b);
+        if(a < b){
+            parent[b] = a;
+        }else{
+            parent[a] = b;
+        }
+    }
+    function Find(x){
+        if(x == parent[x]){
+            return x;
+        }else{
+            return Find(parent[x]);
+        }
+    }
 }
