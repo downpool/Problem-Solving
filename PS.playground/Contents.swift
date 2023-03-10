@@ -1,31 +1,25 @@
 import Foundation
 
-func solution(_ sum: String) -> [Int] {
+func solution(_ input: String) -> Int {
+    let popAndPush: String = "raise"
+    var tower: [Int] = []
     
-    var lines = sum.split(separator: "\n")
-    var stringS = lines[1].split(separator: "")
-    var eCount: [Int] = []
-    var answerArray: [Int] = []
+    var lines = input.split(separator: "\n")
+    let N: Int! = Int(lines[0].split(separator: " ")[0])
     
-    for x in stringS {
-        if(x == "e") {
-            eCount.append(1)
+    for x in 1 ... N {
+        tower.append(x)
+    }
+    
+    var movement = lines.suffix(lines.count - 1)
+    
+    for x in movement {
+        if (x == popAndPush) {
+            tower.append(tower.first!)
+            tower.removeFirst()
         } else {
-            eCount.append(0)
+            tower.removeFirst()
         }
     }
-    var lines2 = lines.suffix(lines.count - 2)
-    
-    for p in lines2 {
-        var LR = p.split(separator: " ")
-        var L: Int! = Int(LR[0])
-        var R: Int! = Int(LR[1])
-        var tempSum = 0
-        for t in L ... R {
-            tempSum += eCount[t - 1]
-        }
-        answerArray.append(tempSum)
-    }
-    
-    return answerArray
+    return tower.first!
 }
