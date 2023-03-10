@@ -17,3 +17,4 @@ function solution(num, total) {
 
     return answer.sort((a, b) => {return a - b;});
 }
+// https://d3vd9lfkzbru3h.cloudfront.net/68d72e69af33d5f62267_hejin0_0_39747795799_1665198690/chunked/index-dvr.m3u8

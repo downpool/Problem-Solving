@@ -1,6 +1,6 @@
-// let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 // //입력 형태 변환
 let input = ['13', 'but', 'i', 'wont', 'hesitate', 'no', 'more', 'no', 'more', 'it', 'cannot', 'wait', 'im', 'yours'];
+// let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 
 function solution(inp) {
     let answer = new Set();

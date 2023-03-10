@@ -7,6 +7,8 @@ function solution(a, b) {
         }
     }
 
+    
+
     let t = b / gcd(a, b);
     while(t % 2 == 0) t /= 2;
     while(t % 5 == 0) t /= 5;

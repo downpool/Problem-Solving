@@ -9,6 +9,5 @@ function solution(skill, skill_trees) {
         }
     }
 
-    
     return answer;
 }
