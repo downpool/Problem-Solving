@@ -1,6 +1,27 @@
 {
     "version": "0.2.0",
     "configurations": [{
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Problem-Solving_82a90fb4"
+        },
+        {
+            "type": "java",
+            "name": "two",
+            "request": "launch",
+            "mainClass": "two",
+            "projectName": "Problem-Solving_82a90fb4"
+        },
+        {
+            "type": "java",
+            "name": "one",
+            "request": "launch",
+            "mainClass": "PS_java.makingProblem.one",
+            "projectName": "Problem-Solving_82a90fb4"
+        },
+        {
             "name": "(lldb) 시작",
             "type": "cppdbg",
             "request": "launch",
@@ -12,55 +33,6 @@
             "externalConsole": false,
             "MIMode": "lldb"
         },
-        // {
-        //     "type": "java",
-        //     "name": "Launch two",
-        //     "request": "launch",
-        //     "mainClass": "two",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch one",
-        //     "request": "launch",
-        //     "mainClass": "one",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch plus",
-        //     "request": "launch",
-        //     "mainClass": "plus",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch prac",
-        //     "request": "launch",
-        //     "mainClass": "PS_java.prac",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch plus",
-        //     "request": "launch",
-        //     "mainClass": "PS_java.plus",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch Main",
-        //     "request": "launch",
-        //     "mainClass": "Main",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch turn",
-        //     "request": "launch",
-        //     "mainClass": "turn",
-        //     "projectName": "Problem-Solving_82a90fb4"
-        // },
         {
             "name": "(lldb) 시작",
             "type": "cppdbg",
