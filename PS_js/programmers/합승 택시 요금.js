@@ -65,6 +65,16 @@ function solution(n, s, a, b, fares) {
             }
         }
     }
+    let distance = Array(n + 1).fill(1000001);
+    function get_smallest_node() {
+        let minValue = 1000001;
+        let index = 0;
+        for (let i = 1; i <= n; i++) {
+            if (distance[i] < minValue && !visited[i]) {
+
+            }
+        }
+    }
 
     bfs(s, visited);
 
