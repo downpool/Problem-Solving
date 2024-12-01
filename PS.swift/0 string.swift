@@ -1,3 +1,3 @@
 import Foundation
 
-var _ = readLine()!.split(separator: " ").map{Int($0)!}
+var _ = readLine()!.map{String($0)!}
